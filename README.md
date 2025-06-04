@@ -1,4 +1,4 @@
-# CodexGPT – Clonagem Mobile Site Vanessa Paiva
+Clonagem Mobile Site Vanessa Paiva
 
 ## Descrição do Projeto
 
