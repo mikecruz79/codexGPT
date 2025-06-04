@@ -1,0 +1,9 @@
+{
+  "name": "codexgpt",
+  "version": "1.0.0",
+  "description": "Static site for Render",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "license": "MIT"
+}
