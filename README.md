@@ -62,3 +62,23 @@ Este repositório tem como objetivo clonar fielmente a versão mobile do site Va
 |    |-- globe@2x.webp
 |-- /fonts/
 |    |-- *.woff2
+
+
+### Integração de Tracking e Leads (Meta Pixel CAPI)
+
+- Todo envio de lead é feito via AJAX pelo `script.js`, enviando os dados para o proxy no Render.
+- O proxy processa, enriquece, loga e encaminha o evento para a API do Facebook, garantindo rastreabilidade, privacidade (hashing) e performance.
+- Para garantir a integração perfeita, os campos do formulário devem ter os nomes:
+  - `Nome`
+  - `E_mail`
+  - `Whatsapp`
+- O script.js faz persistência de campos no localStorage e coleta UTM/referrer/cookies Meta automaticamente.
+- Para eventos adicionais, basta chamar `enviarEvento("NOME_DO_EVENTO")` no JS.
+
+**IMPORTANTE:**  
+Qualquer alteração na URL do proxy deve ser atualizada em `script.js`.  
+Sempre que criar uma landing nova, lembre-se de incluir esse JS.
+
+---
+
+
