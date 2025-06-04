@@ -2,67 +2,37 @@ Clonagem Mobile Site Vanessa Paiva
 
 ## Descrição do Projeto
 
-Este repositório tem como objetivo clonar fielmente a versão mobile do site Vanessa Paiva a partir do arquivo `index.html` fornecido, organizando todos os arquivos necessários (assets, imagens, fontes, CSS, JS) para deploy como **static site** no Render.com ou serviço similar.
+Este repositório tem como objetivo clonar fielmente a versão mobile do site www.vanessapaivacabeleireira.com.br para deploy como **static site** no Render.com ou serviço similar, tudo o que for vinculado ou de contexto ao greatpages é descenessario já que nosso static site no render não tera integração com greatpages.
 
 ## Como montar o projeto a partir do index.html
 
-### 1. Organização dos arquivos
+### 1. Organização dos arquivos 
 
-- Mantenha o `index.html` como arquivo principal.
 - Crie as pastas:
-  - `/assets` para imagens, logos, ícones, fundos, etc.
-  - `/fonts` para arquivos `.woff2`.
-  - `/img` para imagens auxiliares, como bandeiras usadas no input de telefone.
+  - Tendo liberdade para organizar da melhor forma
+  - O importante é que sirvam ao proposito que é o clone da pagina.
+  
 
 - Adicione os arquivos CSS e JS separados:
-  - `css.css` (estilo principal)
-  - `intlTelInput.css` (separado, usado no campo de telefone)
-  - `js.js` (funções JS principais)
+  - Os encontrados no link referenciado que é o site oficial
+  - Usaremos apenas CSS e JS que sirvam o Meta(facebook e instagram) e que sirvam a estrutura do site.
+  - Tudo o que for vinculado ou de contexto ao greatpages é descenessario e não deve fazer parte do nosso projeto.
 
-### 2. Baixar e referenciar assets locais
+### 2. Baixar e Organizar
 
-- **Baixe todas as imagens** referenciadas no HTML e CSS (logo, favicon, banners, fotos, etc.) e mova para `/assets` ou `/img`.
-- **Baixe as bandeiras do plugin intlTelInput** e coloque em `/img/`:
-  - `flags.webp`, `flags@2x.webp`, `globe.webp`, `globe@2x.webp`
-- **Garanta que todas as fontes customizadas `.woff2` estejam em `/fonts`** e são realmente as usadas pelo site.
+- **Baixe todas as imagens que sirvam para o site em verão mobile, não precisamos de nada para outras plataformas** referenciadas no HTML e CSS (logo, favicon, banners, fotos, etc.) e mova para as pastas que preferir para sua organização.
+- **Garanta todas as fontes customizadas que você precisar,que são realmente as usadas pelo site, a organização é você quem define.
 
 ### 3. Atualizar referências de caminho
 
-- No `index.html` e arquivos CSS, troque **todas as URLs externas** de imagens, fontes e favicons para caminhos relativos locais.
-  - Exemplo:  
-    De:  
-    `<link rel="icon" href="https://pages.greatpages.com.br/xxx.png">`  
-    Para:  
-    `<link rel="icon" href="./assets/logo.png">`
-- No `intlTelInput.css`, troque:
-  - `url("../img/flags.webp")` para `url("./img/flags.webp")` (ajustar path conforme estrutura real).
+- Arquivos CSS, troque **todas as URLs externas** de imagens, fontes e favicons para caminhos relativos locais que melhor fiquem organizados pra você.
 
 ### 4. Limpeza e otimização
 
 - **Remova scripts de rastreamento (Google Analytics, Facebook Pixel, GTM etc.)** e arquivos .js que não tenham relação com o funcionamento visual do site.
 - Exclua qualquer arquivo de mock/teste ou que não seja necessário para o funcionamento do site estático.
 
-### 5. Estrutura final esperada
-
-```plaintext
-/
-|-- index.html
-|-- css.css
-|-- intlTelInput.css
-|-- js.js
-|-- /assets/
-|    |-- logo.png
-|    |-- foto1.jpg
-|    |-- banner1.png
-|    |-- ...
-|-- /img/
-|    |-- flags.webp
-|    |-- flags@2x.webp
-|    |-- globe.webp
-|    |-- globe@2x.webp
-|-- /fonts/
-|    |-- *.woff2
-
+### 5. Estrutura final esperada é definida por você, apenas citar no final do projeto como ficou.
 
 ### Integração de Tracking e Leads (Meta Pixel CAPI)
 
@@ -81,4 +51,4 @@ Sempre que criar uma landing nova, lembre-se de incluir esse JS.
 
 ---
 
-
+### Qualquer dúvida ou necessidade antes, durante e depois, podem ser inseridas abaixo:
